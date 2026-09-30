@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean City</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Clean City</h1>
+      <div class="stats">
+        <div class="stat"><span>Collected</span><b id="score">0</b></div>
+        <div class="stat"><span>Best</span><b id="best">0</b></div>
+        <div class="stat fuel">
+          <span>Fuel <b id="fuelNum">25</b></span>
+          <div class="bar"><i id="fuelBar"></i></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="board">
+      <canvas id="game" width="600" height="600"></canvas>
+      <div id="overlay">
+        <h2 id="title">Clean City</h2>
+        <p id="msg">Collect garbage from the green markers. Cars show where they will drive next. Every move or wait uses one fuel; refuel at the blue station.</p>
+        <button id="start">Start</button>
+      </div>
+    </div>
+
+    <footer>Arrow keys / WASD or tap a direction to drive. Space or tap the truck to wait.</footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
